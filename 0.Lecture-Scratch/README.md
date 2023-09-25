@@ -85,7 +85,7 @@
   4 2 1
 - Computers use ‘base-2’ to count. This can be pictured as follows:
 
-  2^2  2^1  2^0
+  2^2  2^1  2^0<br>
   4    2    1
 - Therefore, you could say that it would require three bits (the four’s place, the two’s place, and the one’s place) to represent a number as high as seven.
 
