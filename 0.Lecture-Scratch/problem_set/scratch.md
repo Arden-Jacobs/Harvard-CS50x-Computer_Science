@@ -1,4 +1,4 @@
-Scratch
+# Scratch
 It’s time to choose your own adventure! Your assignment, quite simply, is to implement in Scratch, at scratch.mit.edu, any project of your choice, be it an interactive story, game, animation, or anything else, subject only to the following requirements:
 
 Your project must use at least two sprites, at least one of which must not be a cat.
@@ -31,13 +31,13 @@ If you have a phone (or digital camera) and would like to say hello to classmate
 
 If you do record a video, upload it to YouTube (unless blocked in your country, in which case you’re welcome to upload it elsewhere) so that you can provide us with its URL when you submit!
 
-How to Submit
+# How to Submit
 Be sure to complete both steps below, in order!
 
-Step 1 of 2
+# Step 1 of 2
 Submit this form.
 
-Step 2 of 2
+# Step 2 of 2
 This step assumes that you’ve downloaded your Scratch project as a file whose name ends in .sb3. And this step also assumes that you’ve signed up for a GitHub account, per the above form.
 
 Visit this link, log in with your GitHub account, and click Authorize cs50.
