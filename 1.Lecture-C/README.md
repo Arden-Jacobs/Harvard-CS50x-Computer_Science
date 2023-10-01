@@ -448,4 +448,43 @@
             }
     Notice that we have three functions now. First, we have the main function that calls two other functions called get_size and print_grid. Second, we have a second function called get_size which includes the exact code we had to accomplish this task prior. Third, we have another function called print_grid that prints the grid. Because we abstracted away the essential problems within our program, our main function is very short.
 
+## Operators and Types
+
+- Operators refer to the mathematical operations that are supported by your compiler. In C, these mathematical operators include:
+
+<br>    + for addition
+<br>    - for subtraction
+<br>    * for multiplication
+<br>    / for division
+<br>    % for remainder
+- Types refer to the possible data that can be stored within a variable. For example, a char is designed to accommodate a single character like a or 2.
+- Types are very important because each type has specific limits. For example, because of the limits in memory, the highest value of an int can be 4294967296.
+- Types with which you might interact during this course include:
+
+<br>    bool, a Boolean expression of either true or false
+<br>    char, a single character like a or 2
+<br>    double, a floating-point value with more digits than a float
+<br>    float, a floating-point value, or real number with a decimal value
+<br>    int, integers up to a certain size, or number of bits
+<br>    long, integers with more bits, so they can count higher than an int
+<br>    string, a string of characters
+- You can implement a calculator in C. In your terminal, type code calculator.c and write code as follows:
+
+            #include <cs50.h>
+            #include <stdio.h>
+
+            int main(void)
+            {
+                // Prompt user for x
+                int x = get_int("x: ");
+
+                // Prompt user for y
+                int y = get_int("y: ");
+
+                // Perform addition
+                printf("%i\n", x + y);
+            }
+    Notice how the get_int function is utilized to obtain an integer from the user twice. One integer is stored in the int variable called x. Another is stored in the int variable called y. Then, the printf function prints the value of x + y, designated by the %i symbol.
+
+- As you are coding, pay special attention to the types of variables you are using to avoid problems within your code.
 
