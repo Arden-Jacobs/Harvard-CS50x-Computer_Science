@@ -43,12 +43,11 @@ Note that every single character above serves a purpose. If you type it incorrec
 - Now, type ./hello and your program will execute saying hello, world.
 - Now, open the file explorer on the left. You will notice that there is now both a file called hello.c and another file called hello. hello.c is able to be read by the compiler: It’s where your code is stored. hello is an executable file that you can run, but cannot be read by the compiler.
 - Let’s look at our code more carefully:
+    #include <stdio.h>
 
-#include <stdio.h>
-
-int main(void)
-{
-    printf("hello, world\n");
-}
+    int main(void)<br>
+    {<br>
+        printf("hello, world\n");<br>
+    }<br>
 Notice that our code is highlighted using syntax highlighting.
 
