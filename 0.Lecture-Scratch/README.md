@@ -2,7 +2,7 @@
 
 ## Index
 
-- [What’s Ahead](#what's-ahead)
+- [What’s Ahead](#what’s-ahead)
 - [Community](#community)
 - [Computational Thinking](#computational-thinking)
 - [Text](#text)
