@@ -2,8 +2,7 @@
 
 ## Index
 
-### What’s Ahead
-
+- [What’s Ahead](#what's-ahead)
 - [Community](#community)
 - [Computational Thinking](#computational-thinking)
 - [Text](#text)
@@ -28,7 +27,7 @@
 - This course is far more about you advancing “you” from “where you are today” than hitting some imagined standard.
 - The most important opening consideration in this course: Give the time you need to learn through this course. Everyone learns differently. If something does not work out well at the start, know that with time you will grow and grow in your skill.
 
-### What’s Ahead
+## What’s Ahead
 
 - You will be learning this week about Scratch, a visual programming language.
 - Then, in future weeks, you will learn about C. That will look something like this:
