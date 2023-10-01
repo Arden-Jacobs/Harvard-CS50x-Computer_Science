@@ -56,8 +56,8 @@ Notice that our code is highlighted using syntax highlighting.
 
 - In Scratch, we utilized the say block to display any text on the screen. Indeed, in C, we have a function called printf that does exactly this.
 - Notice our code already invokes this function:
-
     printf("hello, world\n");<br>
+    
 Notice that the printf function is called. The argument passed to printf is ‘hello, world\n’. The statement of code is closed with a ;.
 
 - A common error in C programming is the omission of a semicolon. Modify your code as follows:
