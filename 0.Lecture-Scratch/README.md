@@ -1,6 +1,6 @@
 # Lecture 0: Welcome to Computer Science
 
-## Welcome!
+## Index
 
 ### What’s Ahead
 

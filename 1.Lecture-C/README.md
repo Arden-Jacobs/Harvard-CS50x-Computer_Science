@@ -1,6 +1,6 @@
 # Lecture 1: Introduction to Programming with C
 
-## Welcome!
+## Index
 
 - [Hello World](#Hello-World)
 - [Functions](#Functions)
