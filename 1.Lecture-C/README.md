@@ -84,3 +84,21 @@ Notice the semicolon and \n have been restored.
 
 - The statement at the start of the code #include <stdio.h> is a very special command that tells the compile that you want to use the capabilities of library called stdio.h. This allows you, among many other things, to utilize the printf function. You can read about all the capabilities of this library on the [Manual Pages](https://manual.cs50.io/).
 - It turns out that CS50 has its own library called cs50.h. Let’s use this library in your program.
+
+## Variables
+
+- Recall that in Scratch, we had the ability to ask the user “What’s your name?” and say “hello” with that name appended to it.
+- In C, we can do the same. Modify your code as follows:
+
+#include <cs50.h>
+#include <stdio.h>
+
+int main(void)<br>
+    {<br>
+        string answer = get_string("What's your name? ");<br>
+        printf("hello, %s\n", answer);<br>
+    }<br>
+Notice that #include <cs50.h> has been added to the top of your code. The get_string function is used to get a string from the user. Then, the variable answer is passed to the printf function. %s tells the printf function to prepare itself to receive a string.
+
+- answer is a special holding place we call a variable. answer is of type string and can hold any string within it. There are many data types, such as int, bool, char, and many others.
+- Running make hello again in the terminal window, you can run your program by typing ./hello. The program now asks for your name and then says hello with your name attached.
