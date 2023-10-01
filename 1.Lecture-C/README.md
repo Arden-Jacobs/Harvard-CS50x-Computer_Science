@@ -33,6 +33,7 @@
 <br>Notice that there is a file explorer on the left side where you can find your files. Further, notice that there is a region in the middle called a text editor where you can edit your program. Finally, there is a command line interface, known as a CLI, command line, or terminal window where we can send commands to the computer in the cloud.
 - We can build your first program in C by typing code hello.c into the terminal window. Notice that we deliberately lowercased the entire filename and included the .c extension. Then, in the text editor that appears, write code as follows:<br>
 #include <stdio.h><br>
+
     int main(void)<br>
     {<br>
         printf("hello, world\n");<br>
@@ -51,3 +52,35 @@ Note that every single character above serves a purpose. If you type it incorrec
     }<br>
 Notice that our code is highlighted using syntax highlighting.
 
+## Functions
+
+- In Scratch, we utilized the say block to display any text on the screen. Indeed, in C, we have a function called printf that does exactly this.
+- Notice our code already invokes this function:
+
+printf("hello, world\n");
+Notice that the printf function is called. The argument passed to printf is ‘hello, world\n’. The statement of code is closed with a ;.
+
+- A common error in C programming is the omission of a semicolon. Modify your code as follows:
+
+    #include <stdio.h>
+
+    int main(void)<br>
+    {<br>
+        printf("hello, world\n");<br>
+    }<br>
+Notice the semicolon is now gone.
+
+- In your terminal window, run make hello. You will now be met with numerous errors! Placing the semicolon back in the correct position and running make hello again, the errors go away.
+- Notice also the special symbol \n in your code. Try removing those characters and making your program again by executing make hello. Typing ./hello in the terminal window, how did your program change?
+- Restore your program to the following:
+
+    #include <stdio.h>
+
+    int main(void)<br>
+    {<br>
+        printf("hello, world\n");<br>
+    }<br>
+Notice the semicolon and \n have been restored.
+
+- The statement at the start of the code #include <stdio.h> is a very special command that tells the compile that you want to use the capabilities of library called stdio.h. This allows you, among many other things, to utilize the printf function. You can read about all the capabilities of this library on the [Manual Pages](https://manual.cs50.io/).
+- It turns out that CS50 has its own library called cs50.h. Let’s use this library in your program.
