@@ -102,3 +102,74 @@
 
 - answer is a special holding place we call a variable. answer is of type string and can hold any string within it. There are many data types, such as int, bool, char, and many others.
 - Running make hello again in the terminal window, you can run your program by typing ./hello. The program now asks for your name and then says hello with your name attached.
+
+## Conditionals
+
+- Another building block you utilized within Scratch was that of conditionals. For example, you might want to do one thing if x is greater than y. Further, you might want to do something else if that condition is not met.
+- In the terminal window, type code compare.c and write code as follows:
+
+            #include <cs50.h>
+            #include <stdio.h>
+
+            int main(void)
+            {
+                int x = get_int("What's x? ");
+                int y = get_int("What's y? ");
+
+                if (x < y)
+                {
+                    printf("x is less than y\n");
+                }
+            }
+    Notice that we create two variables, an int or integer called x and another called y. The values of these are populated using the get_int function.
+
+- You can run your code by executing make compare in the terminal window, followed by ./compare. If you get any error messages, check your code for errors.
+- We can improve your program by coding as follows:
+
+            #include <cs50.h>
+            #include <stdio.h>
+
+            int main(void)
+            {
+                int x = get_int("What's x? ");
+                int y = get_int("What's y? ");
+
+                if (x < y)
+                {
+                    printf("x is less than y\n");
+                }
+                else if (x > y)
+                {
+                    printf("x is greater than y\n");
+                }
+                else
+                {
+                    printf("x is equal to y\n");
+                }
+            }
+    Notice that all potential outcomes are now accounted for.
+
+- You can re-make and re-run your program and test it out.
+- Considering another data type called a char we can start a new program by typing code agree.c into the terminal window. In the text editor, write code as follows:
+
+            #include <cs50.h>
+            #include <stdio.h>
+
+            int main(void)
+            {
+                // Prompt user to agree
+                char c = get_char("Do you agree? ");
+
+                // Check whether agreed
+                if (c == 'Y' || c == 'y')
+                {
+                    printf("Agreed.\n");
+                }
+                else if (c == 'N' || c == 'n')
+                {
+                    printf("Not agreed.\n");
+                }
+            }
+    Notice that single quotes are utilized for single characters. Further, notice that == ensure that something is equal to something else, where a single equal sign would have a very different function in C. Finally, notice that || effectively means or.
+
+- You can test your code by typing make agree into the terminal window, followed by ./agree.
