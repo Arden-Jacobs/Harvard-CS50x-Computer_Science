@@ -33,11 +33,10 @@
 <br>Notice that there is a file explorer on the left side where you can find your files. Further, notice that there is a region in the middle called a text editor where you can edit your program. Finally, there is a command line interface, known as a CLI, command line, or terminal window where we can send commands to the computer in the cloud.
 - We can build your first program in C by typing code hello.c into the terminal window. Notice that we deliberately lowercased the entire filename and included the .c extension. Then, in the text editor that appears, write code as follows:<br>
 #include <stdio.h>
-<br>
-int main(void)<br>
-{<br>
-    printf("hello, world\n");<br>
-}<br>
+    int main(void)<br>
+    {<br>
+        printf("hello, world\n");<br>
+    }<br>
 Note that every single character above serves a purpose. If you type it incorrectly, the program will not run.
 
 - Clicking back in the terminal window, you can compile your code by executing make hello. Notice that we are omitting .c. make is a compiler that will look for our hello.c file and turn it into a program called hello. If executing this command results in no errors, you can proceed. If not, double-check your code to ensure it matches the above.
