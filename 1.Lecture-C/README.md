@@ -32,24 +32,24 @@
 ![IDE](https://cs50.harvard.edu/x/2023/notes/1/cs50Week1Slide017.png)
 <br>Notice that there is a file explorer on the left side where you can find your files. Further, notice that there is a region in the middle called a text editor where you can edit your program. Finally, there is a command line interface, known as a CLI, command line, or terminal window where we can send commands to the computer in the cloud.
 - We can build your first program in C by typing code hello.c into the terminal window. Notice that we deliberately lowercased the entire filename and included the .c extension. Then, in the text editor that appears, write code as follows:<br>
-#include <stdio.h><br>
+            #include <stdio.h>
 
-    int main(void)<br>
-    {<br>
-        printf("hello, world\n");<br>
-    }<br>
+            int main(void)
+            {
+                printf("hello, world\n");
+            }
 Note that every single character above serves a purpose. If you type it incorrectly, the program will not run.
 
 - Clicking back in the terminal window, you can compile your code by executing make hello. Notice that we are omitting .c. make is a compiler that will look for our hello.c file and turn it into a program called hello. If executing this command results in no errors, you can proceed. If not, double-check your code to ensure it matches the above.
 - Now, type ./hello and your program will execute saying hello, world.
 - Now, open the file explorer on the left. You will notice that there is now both a file called hello.c and another file called hello. hello.c is able to be read by the compiler: It’s where your code is stored. hello is an executable file that you can run, but cannot be read by the compiler.
-- Let’s look at our code more carefully:<br>
-    #include <stdio.h>
+- Let’s look at our code more carefully:
+            #include <stdio.h>
 
-    int main(void)<br>
-    {<br>
-        printf("hello, world\n");<br>
-    }<br>
+            int main(void)
+            {
+                printf("hello, world\n");
+            }
 Notice that our code is highlighted using syntax highlighting.
 
 ## Functions
@@ -57,29 +57,29 @@ Notice that our code is highlighted using syntax highlighting.
 - In Scratch, we utilized the say block to display any text on the screen. Indeed, in C, we have a function called printf that does exactly this.
 - Notice our code already invokes this function:
 
-    printf("hello, world\n");<br>
+            printf("hello, world\n");
 Notice that the printf function is called. The argument passed to printf is ‘hello, world\n’. The statement of code is closed with a ;.
 
 - A common error in C programming is the omission of a semicolon. Modify your code as follows:
 
-    #include <stdio.h>
+            #include <stdio.h>
 
-    int main(void)<br>
-    {<br>
-        printf("hello, world\n");<br>
-    }<br>
+            int main(void)
+            {
+                printf("hello, world\n");
+            }
 Notice the semicolon is now gone.
 
 - In your terminal window, run make hello. You will now be met with numerous errors! Placing the semicolon back in the correct position and running make hello again, the errors go away.
 - Notice also the special symbol \n in your code. Try removing those characters and making your program again by executing make hello. Typing ./hello in the terminal window, how did your program change?
 - Restore your program to the following:
 
-    #include <stdio.h>
+            #include <stdio.h>
 
-    int main(void)<br>
-    {<br>
-        printf("hello, world\n");<br>
-    }<br>
+            int main(void)
+            {
+                printf("hello, world\n");
+            }
 Notice the semicolon and \n have been restored.
 
 - The statement at the start of the code #include <stdio.h> is a very special command that tells the compile that you want to use the capabilities of library called stdio.h. This allows you, among many other things, to utilize the printf function. You can read about all the capabilities of this library on the [Manual Pages](https://manual.cs50.io/).
@@ -90,14 +90,14 @@ Notice the semicolon and \n have been restored.
 - Recall that in Scratch, we had the ability to ask the user “What’s your name?” and say “hello” with that name appended to it.
 - In C, we can do the same. Modify your code as follows:
 
-            #include <cs50.h><br>
+            #include <cs50.h>
             #include <stdio.h>
 
-            int main(void)<br>
-            {<br>
-                string answer = get_string("What's your name? ");<br>
-                printf("hello, %s\n", answer);<br>
-            }<br>
+            int main(void)
+            {
+                string answer = get_string("What's your name? ");
+                printf("hello, %s\n", answer);
+            }
 Notice that #include <cs50.h> has been added to the top of your code. The get_string function is used to get a string from the user. Then, the variable answer is passed to the printf function. %s tells the printf function to prepare itself to receive a string.
 
 - answer is a special holding place we call a variable. answer is of type string and can hold any string within it. There are many data types, such as int, bool, char, and many others.
