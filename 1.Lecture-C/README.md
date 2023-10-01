@@ -90,7 +90,7 @@ Notice the semicolon and \n have been restored.
 - Recall that in Scratch, we had the ability to ask the user “What’s your name?” and say “hello” with that name appended to it.
 - In C, we can do the same. Modify your code as follows:
 
-#include <cs50.h>
+#include <cs50.h><br>
 #include <stdio.h>
 
 int main(void)<br>
