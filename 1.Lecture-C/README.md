@@ -38,7 +38,7 @@
             {
                 printf("hello, world\n");
             }
-Note that every single character above serves a purpose. If you type it incorrectly, the program will not run.
+    Note that every single character above serves a purpose. If you type it incorrectly, the program will not run.
 
 - Clicking back in the terminal window, you can compile your code by executing make hello. Notice that we are omitting .c. make is a compiler that will look for our hello.c file and turn it into a program called hello. If executing this command results in no errors, you can proceed. If not, double-check your code to ensure it matches the above.
 - Now, type ./hello and your program will execute saying hello, world.
@@ -50,7 +50,7 @@ Note that every single character above serves a purpose. If you type it incorrec
             {
                 printf("hello, world\n");
             }
-Notice that our code is highlighted using syntax highlighting.
+    Notice that our code is highlighted using syntax highlighting.
 
 ## Functions
 
@@ -58,7 +58,7 @@ Notice that our code is highlighted using syntax highlighting.
 - Notice our code already invokes this function:
 
             printf("hello, world\n");
-Notice that the printf function is called. The argument passed to printf is ‘hello, world\n’. The statement of code is closed with a ;.
+    Notice that the printf function is called. The argument passed to printf is ‘hello, world\n’. The statement of code is closed with a ;.
 
 - A common error in C programming is the omission of a semicolon. Modify your code as follows:
 
@@ -68,7 +68,7 @@ Notice that the printf function is called. The argument passed to printf is ‘h
             {
                 printf("hello, world\n");
             }
-Notice the semicolon is now gone.
+    Notice the semicolon is now gone.
 
 - In your terminal window, run make hello. You will now be met with numerous errors! Placing the semicolon back in the correct position and running make hello again, the errors go away.
 - Notice also the special symbol \n in your code. Try removing those characters and making your program again by executing make hello. Typing ./hello in the terminal window, how did your program change?
@@ -80,7 +80,7 @@ Notice the semicolon is now gone.
             {
                 printf("hello, world\n");
             }
-Notice the semicolon and \n have been restored.
+    Notice the semicolon and \n have been restored.
 
 - The statement at the start of the code #include <stdio.h> is a very special command that tells the compile that you want to use the capabilities of library called stdio.h. This allows you, among many other things, to utilize the printf function. You can read about all the capabilities of this library on the [Manual Pages](https://manual.cs50.io/).
 - It turns out that CS50 has its own library called cs50.h. Let’s use this library in your program.
@@ -98,7 +98,7 @@ Notice the semicolon and \n have been restored.
                 string answer = get_string("What's your name? ");
                 printf("hello, %s\n", answer);
             }
-        Notice that #include <cs50.h> has been added to the top of your code. The get_string function is used to get a string from the user. Then, the variable answer is passed to the printf function. %s tells the printf function to prepare itself to receive a string.
+    Notice that #include <cs50.h> has been added to the top of your code. The get_string function is used to get a string from the user. Then, the variable answer is passed to the printf function. %s tells the printf function to prepare itself to receive a string.
 
 - answer is a special holding place we call a variable. answer is of type string and can hold any string within it. There are many data types, such as int, bool, char, and many others.
 - Running make hello again in the terminal window, you can run your program by typing ./hello. The program now asks for your name and then says hello with your name attached.
