@@ -1,0 +1,11 @@
+Prompt user for height
+If height is less than 1 or greater than 8 (or not an integer at all), go back one step
+Create Loop that loop while i less than height
+    Create loop that loops while space less than (height - i -1)
+        print single whitespace
+    Create loop that loops while left less i+1
+        print #
+    print 2 whitespace
+    Create loop that loops while right less i+1
+        print #
+    print newline
