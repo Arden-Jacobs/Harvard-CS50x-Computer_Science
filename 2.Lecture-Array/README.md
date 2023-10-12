@@ -140,7 +140,7 @@ Notice the <= has been replaced with <.
             while (n < 0);
             return n;
         }
-Notice get_negative_int is designed to get a negative integer from the user.
+    Notice get_negative_int is designed to get a negative integer from the user.
 
 - Running make buggy1, you’ll notice that it does not do as intended. It accepts positive integers and seems to ignore negative ones.
 - As before, set a breakpoint at a line of your code. Best to set a breakpoint at int i = get_negative_int. Now, run debug50 buggy1.
@@ -169,7 +169,7 @@ Notice get_negative_int is designed to get a negative integer from the user.
             while (n >= 0);
             return n;
         }
-Notice n < 0 has been changed.
+    Notice n < 0 has been changed.
 
 - A final form of debugging is called rubber duck debugging. When you are having challenges with your code, consider how speaking out loud to, quite literally, a rubber duck about the code problem. If you’d rather not talk to a small plastic duck, you are welcome to speak to a human near you! They need not understand how to program: Speaking with them is an opportunity for you to speak about your code.
 ![duck](https://cs50.harvard.edu/x/2023/notes/2/cs50Week2Slide070.png)
@@ -204,7 +204,7 @@ Notice n < 0 has been changed.
             // Print average
             printf("Average: %f\n", (score1 + score2 + score3) / 3.0);
         }
-Notice that the number on the right is a floating point value of 3.0, such that the calculation is rendered as a floating point value in the end.
+    Notice that the number on the right is a floating point value of 3.0, such that the calculation is rendered as a floating point value in the end.
 
 - Running make scores, the program runs.
 - You can imagine how these variables are stored in memory:
@@ -226,7 +226,7 @@ int scores[3] is a way of telling the compiler to provide you three back-to-back
             // Print average
             printf("Average: %f\n", (scores[0] + scores[1] + scores[2]) / 3.0);
         }
-Notice that score[0] examines the value at this location of memory by indexing into the array called scores at location 0 to see what value is stored there.
+    Notice that score[0] examines the value at this location of memory by indexing into the array called scores at location 0 to see what value is stored there.
 
 You can see how while the above code works, there is still an opportunity for improving our code. Revise your code as follows:
 
@@ -245,7 +245,7 @@ You can see how while the above code works, there is still an opportunity for im
             // Print average
             printf("Average: %f\n", (scores[0] + scores[1] + scores[2]) / 3.0);
         }
-Notice how we index into scores by using scores[i] where i is supplied by the for loop.
+    Notice how we index into scores by using scores[i] where i is supplied by the for loop.
 
 - We can simplify or abstract away the calculation of the average. Modify your code as follows:
 
@@ -281,6 +281,6 @@ Notice how we index into scores by using scores[i] where i is supplied by the fo
             }
             return sum / (float) length;
         }
-Notice that a new function called average is declared. Further, notice that a const or constant value of N is declared. Most importantly, notice how the average function takes int array[], which means that the compiler passes an array to this function.
+    Notice that a new function called average is declared. Further, notice that a const or constant value of N is declared. Most importantly, notice how the average function takes int array[], which means that the compiler passes an array to this function.
 - Not only can arrays be containers: They can be passed between functions.
 
