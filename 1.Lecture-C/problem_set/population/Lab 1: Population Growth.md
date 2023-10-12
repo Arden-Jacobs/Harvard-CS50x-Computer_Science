@@ -74,3 +74,43 @@ How might you adapt this code to ensure a start size of at least 9, and an end s
         printf("The number is %i\n", n);
 to specify that the variable n should fill in for the placeholder %i.
 
+# How to Test Your Code
+Your program should behave per these examples below.
+
+    $ ./population
+    Start size: 1200
+    End size: 1300
+    Years: 1
+---
+    $ ./population
+    Start size: -5
+    Start size: 3
+    Start size: 9
+    End size: 5
+    End size: 18
+    Years: 8
+---
+    $ ./population
+    Start size: 20
+    End size: 1
+    End size: 10
+    End size: 100
+    Years: 20
+---
+    $ ./population
+    Start size: 100
+    End size: 1000000
+    Years: 115
+---
+Execute the below to evaluate the correctness of your code using check50. But be sure to compile and test it yourself as well!
+
+    check50 cs50/labs/2023/x/population
+
+Execute the below to evaluate the style of your code using style50.
+
+    style50 population.c
+
+# How to Submit
+In your terminal, execute the below to submit your work.
+
+    submit50 cs50/labs/2023/x/population
