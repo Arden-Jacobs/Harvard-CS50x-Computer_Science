@@ -284,3 +284,4 @@ You can see how while the above code works, there is still an opportunity for im
     Notice that a new function called average is declared. Further, notice that a const or constant value of N is declared. Most importantly, notice how the average function takes int array[], which means that the compiler passes an array to this function.
 - Not only can arrays be containers: They can be passed between functions.
 
+# Strings
