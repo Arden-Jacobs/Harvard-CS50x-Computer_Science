@@ -95,16 +95,17 @@ An encrypted piece of text may look like the following:
     }
 - Running this code, you will see numerous statements, including i is 0, i is 1, i is 2, and i is 3. Seeing this, you might realize that Further code needs to be corrected as follows:
 
-    #include <stdio.h>
+        #include <stdio.h>
 
-    int main(void)
-    {
-        for (int i = 0; i < 3; i++)
+        int main(void)
         {
-            printf("#\n");
+            for (int i = 0; i < 3; i++)
+            {
+                printf("#\n");
+            }
         }
-    }
-    
+
+
 Notice the <= has been replaced with <.
 
 - A second tool in debugging is called a debugger, a software tool created by programmers to help track down bugs in code.
