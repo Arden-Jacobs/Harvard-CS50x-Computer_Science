@@ -104,6 +104,7 @@ An encrypted piece of text may look like the following:
             printf("#\n");
         }
     }
+    
 Notice the <= has been replaced with <.
 
 - A second tool in debugging is called a debugger, a software tool created by programmers to help track down bugs in code.
