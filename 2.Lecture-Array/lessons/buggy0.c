@@ -12,4 +12,5 @@ int main(void)
     }
 }
 
-- Note: This code doesn't contain any apparent bugs, but it's worth mentioning that the loop condition (i <= 3) will execute the loop four times (for i equal to 0, 1, 2, and 3). If you intended to execute the loop three times, you might want to change the condition to i < 3.
+- Note: This code doesn't contain any apparent bugs, but it's worth mentioning that the loop condition (i <= 3) will execute the loop four times (for i equal to 0, 1, 2, and 3). 
+   - If you intended to execute the loop three times, you might want to change the condition to i < 3.
