@@ -12,7 +12,7 @@ int main(void)
     // Print each character of the string one by one using strlen
     printf("Output: ");
 
-    // Use a for loop and creates a varable to remember the string's length, to iterate over each character in the string
+    // Use a for loop and create a variable 'n' to remember the string's length, to iterate over each character in the string
     for (int i = 0, n = strlen(s); i < n; i++)
     {
         // Print the current character
