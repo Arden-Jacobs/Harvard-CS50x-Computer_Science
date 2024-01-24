@@ -1,35 +1,19 @@
-// Averages three numbers using an array, a constant, and a helper function
-
+// Include necessary libraries for the program
 #include <cs50.h>
 #include <stdio.h>
 
-// Constant
-const int N = 3;
-
-// Prototype
-float average(int length, int array[]);
-
+// Main function, entry point of the program
 int main(void)
 {
-    // Get scores
-    int scores[N];
-    for (int i = 0; i < N; i++)
+    // Declare an array of integers to store scores
+    int scores[3];
+
+    // Use a loop to prompt the user for input and populate the array
+    for (int i = 0; i < 3; i++)
     {
         scores[i] = get_int("Score: ");
     }
 
-    // Print average
-    printf("Average: %f\n", average(N, scores));
+    // Calculate and print the average of the entered scores using an array and a loop
+    printf("Average: %f\n", (scores[0] + scores[1] + scores[2]) / 3.0);
 }
-
-float average(int length, int array[])
-{
-    // Calculate average
-    int sum = 0;
-    for (int i = 0; i < length; i++)
-    {
-        sum += array[i];
-    }
-    return sum / (float) length;
-}
-
