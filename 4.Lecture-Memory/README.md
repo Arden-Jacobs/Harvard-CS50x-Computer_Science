@@ -38,7 +38,7 @@
 
     ![A photoshop panel with RGB values and hexidecimal input](https://cs50.harvard.edu/x/2024/notes/4/cs50Week4Slide016.png)
 
-Notice how the amount of red, blue, and green changes the color selected.
+    Notice how the amount of red, blue, and green changes the color selected.
 
 - You can see by the image above that color is not just represented in three values. At the bottom of the window, there is a special value made up of numbers and characters. 255 is represented as FF. Why might this be?
 
@@ -169,30 +169,30 @@ Notice how n is stored in memory with the value 50.
 
 - Modify your code as follows:
 
-    #include <cs50.h>
-    #include <stdio.h>
+        #include <cs50.h>
+        #include <stdio.h>
 
-    int main(void)
-    {
-        string s = "HI!";
-        printf("%p\n", s);
-        printf("%p\n", &s[0]);
-        printf("%p\n", &s[1]);
-        printf("%p\n", &s[2]);
-        printf("%p\n", &s[3]);
-    }
+        int main(void)
+        {
+            string s = "HI!";
+            printf("%p\n", s);
+            printf("%p\n", &s[0]);
+            printf("%p\n", &s[1]);
+            printf("%p\n", &s[2]);
+            printf("%p\n", &s[3]);
+        }
 
     Notice the above prints the memory locations of each character in the string s. The & symbol is used to show the address of each element of the string. When running this code, notice that elements 0, 1, 2, and 3 are next to one another in memory.
 
 - Likewise, you can modify your code as follows:
 
-    #include <stdio.h>
+        #include <stdio.h>
 
-    int main(void)
-    {
-        char *s = "HI!";
-        printf("%s\n", s);
-    }
+        int main(void)
+        {
+            char *s = "HI!";
+            printf("%s\n", s);
+        }
 
     Notice that this code will present the string that starts at the location of s. This code effectively removes the training wheels of the string data type offered by cs50.h. This is raw C code, without the scaffolding of the cs50 library.
 
