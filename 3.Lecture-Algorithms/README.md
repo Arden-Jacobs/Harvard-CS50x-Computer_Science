@@ -1,20 +1,19 @@
 # Lecture 3
----
 
-- [Welcome!](#Welcome!)
-- [Linear Search](#Linear-Search)
-- [Binary Search](#Binary-Search)
-- [Running Time](#Running-Time)
-- [search.c](#search.c)
-- [Data Structures](#Data-Structures)
-- [Sorting](#Sorting)
-- [Bubble Sort](#Bubble-Sort)
-- [Recursion](#Recursion)
-- [Merge Sort](#Merge-Sort)
-- [Summing Up](#Summing-Up)
+- [Welcome](#welcome)
+- [Linear Search](#linear-search)
+- [Binary Search](#binary-search)
+- [Running Time](#running-time)
+- [Search](#search)
+- [Data Structures](#data-structures)
+- [Sorting](#sorting)
+- [Bubble Sort](#bubble-sort)
+- [Recursion](#recursion)
+- [Merge Sort](#merge-sort)
+- [Summing Up](#summing-up)
 
+## Welcome
 
-## Welcome!
 - In week zero, we introduced the idea of an algorithm: a black box that may take an input and creates an output.
 
 - This week, we are going to expand upon our understanding of algorithms through pseudocode and into code itself.
@@ -23,7 +22,7 @@
 
 - Recall back to earlier in the course when we introduced the following graph:
 
-![graph](https://cs50.harvard.edu/x/2024/notes/3/cs50Week3Slide010.png)
+    ![graph](https://cs50.harvard.edu/x/2024/notes/3/cs50Week3Slide010.png)
 
 - As we step into this week, you should consider how the way an algorithm works with a problem may determine the time it takes to solve a problem! Algorithms can be designed to be more and more efficient, to a limit.
 
@@ -35,14 +34,13 @@
 
 - You can metaphorically imagine an array like a series of seven red lockers as follows:
 
-![red box](https://cs50.harvard.edu/x/2024/notes/3/cs50Week3Slide018.png)
+    ![red box](https://cs50.harvard.edu/x/2024/notes/3/cs50Week3Slide018.png)
 
 - We can imagine that we have an essential problem of wanting to know, “Is the number 50 inside an array?” A computer must look at each locker to be able to see if the number 50 is inside. We call this process of finding such a number, character, string, or other item searching.
 
 - We can potentially hand our array to an algorithm, wherein our algorithm will search through our lockers to see if the number 50 is behind one of the doors: Returning the value true or false.
 
-
-![input output](https://cs50.harvard.edu/x/2024/notes/3/cs50Week3Slide022.png)
+    ![input output](https://cs50.harvard.edu/x/2024/notes/3/cs50Week3Slide022.png)
 
 - We can imagine various instructions we might provide our algorithm to undertake this task as follows:
 
@@ -124,7 +122,7 @@ Notice, looking at this approximation of code, you can nearly imagine what this 
 
 - As you continue to develop your knowledge in computer science, you will explore these topics in more detail in future courses.
 
-## search.c
+## Search
 
 - You can implement linear search ourselves by typing code search.c in your terminal window and by writing code as follows:
 
@@ -179,7 +177,7 @@ Notice that the line beginning with int numbers[] allows us to define the values
             return 1;
         }
 
-Notice that we cannot utilize == as in our previous iteration of this program. Instead, we use strcmp, which comes from the string.h library. strcmp will return 0 if the strings are the same.
+    Notice that we cannot utilize == as in our previous iteration of this program. Instead, we use strcmp, which comes from the string.h library. strcmp will return 0 if the strings are the same.
 
 - Indeed, running this code allows us to iterate over this array of strings to see if a certain string was within it. However, if you see a segmentation fault, where a part of memory was touched by your program that it should not have access to, do make sure you have i < 6 noted above instead of i < 7.
 
@@ -259,8 +257,7 @@ Notice that Carter’s number begins with +1-617, David’s phone number starts 
             return 1;
         }
 
-Notice that the code begins with typedef struct where a new datatype called person is defined. Inside a person is a string called name and a string called number. In the main function, begin by creating an array called people that is of type person that is a size of 3. Then, we update the names and phone numbers of the two people in our people array. Most important, notice how the dot notation such as people[0].name allows us to access the person at the 0th location and assign that individual a name.
-
+    Notice that the code begins with typedef struct where a new datatype called person is defined. Inside a person is a string called name and a string called number. In the main function, begin by creating an array called people that is of type person that is a size of 3. Then, we update the names and phone numbers of the two people in our people array. Most important, notice how the dot notation such as people[0].name allows us to access the person at the 0th location and assign that individual a name.
 
 ## Sorting
 
@@ -274,7 +271,7 @@ Notice that the code begins with typedef struct where a new datatype called pers
 
 - We can represent an array as follows:
 
-![sort](https://cs50.harvard.edu/x/2024/notes/3/cs50Week3Slide104.png)
+    ![sort](https://cs50.harvard.edu/x/2024/notes/3/cs50Week3Slide104.png)
 
 - The algorithm for selection sort in pseudocode is:
 
@@ -301,12 +298,12 @@ Notice that the code begins with typedef struct where a new datatype called pers
             If no swaps
                 Quit
 
-
 - As we further sort the array, we know more and more of it becomes sorted, so we only need to look at the pairs of numbers that haven’t been sorted yet.
 
 - Analyzing selection sort, we made only seven comparisons. Representing this mathematically, where n represents the number of cases, it could be said that selection sort can be analyzed as:
 
           (n - 1) + (n - 2) + (n - 3) + ... + 1
+
 or, more simply <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi>n</mi><mn>2</mn></msup><mrow data-mjx-texclass="ORD"><mo>/</mo></mrow><mn>2</mn><mo>&#x2212;</mo><mi>n</mi><mrow data-mjx-texclass="ORD"><mo>/</mo></mrow><mn>2</mn></math>.
 
 - Considering that mathematical analysis, n2 is really the most influential factor in determining the efficiency of this algorithm. Therefore, selection sort is considered to be of the order of <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>O</mi><mo stretchy="false">(</mo><msup><mi>n</mi><mn>2</mn></msup><mo stretchy="false">)</mo></math> n the worst case where all values are unsorted. Even when all values are sorted, it will take the same number of steps. Therefore, the best case can be noted as <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">&#x3A9;</mi><mo stretchy="false">(</mo><msup><mi>n</mi><mn>2</mn></msup><mo stretchy="false">)</mo></math>  Since both the upper bound and lower bound cases are the same, the efficiency of this algorithm as a whole can be regarded as <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">&#x398;</mi><mo stretchy="false">(</mo><msup><mi>n</mi><mn>2</mn></msup><mo stretchy="false">)</mo></math>.
@@ -346,7 +343,6 @@ Notice that we are calling search on smaller and smaller iterations of this prob
         11     Go back to line 3
         12 Else
         13     Quit
-
 
 - This code could have been simplified, to highlight its recursive properties as follows:
 
@@ -392,7 +388,7 @@ Notice that we are calling search on smaller and smaller iterations of this prob
             draw(n + 1);
         }
 
-Notice that the draw function calls itself. Further, note that your code may get caught in an infinite loop. To break from this loop, if you get stuck, hit ctrl-c on your keyboard. The reason this creates an infinite loop is that there is nothing telling the program to end. There is no case where the program is done.
+    Notice that the draw function calls itself. Further, note that your code may get caught in an infinite loop. To break from this loop, if you get stuck, hit ctrl-c on your keyboard. The reason this creates an infinite loop is that there is nothing telling the program to end. There is no case where the program is done.
 
 - We can correct our code as follows:
 
@@ -429,9 +425,9 @@ Notice that the draw function calls itself. Further, note that your code may get
             printf("\n");
         }
 
-Notice the base case will ensure the code does not run forever. The line if (n <= 0) terminates the recursion because the problem has been solved. Every time draw calls itself, it calls itself by n-1. At some point, n-1 will equal 0, resulting in the draw function returning and the program will end.
+    Notice the base case will ensure the code does not run forever. The line if (n <= 0) terminates the recursion because the problem has been solved. Every time draw calls itself, it calls itself by n-1. At some point, n-1 will equal 0, resulting in the draw function returning and the program will end.
 
-- Merge Sort
+## Merge Sort
 
 - We can now leverage recursion in our quest for a more efficient sort algorithm and implement what is called merge sort, a very efficient sort algorithm.
 
@@ -472,7 +468,7 @@ Notice the base case will ensure the code does not run forever. The line if (n <
 
         36|14
 
-- Both halves are now sorted. Finally, the algorithm will merge both sides. It will look at the first number on the left and the first number on the right. It will put the smaller number first, then the second smallest. 
+- Both halves are now sorted. Finally, the algorithm will merge both sides. It will look at the first number on the left and the first number on the right. It will put the smaller number first, then the second smallest.
 
 - The algorithm will repeat this for all numbers, resulting in:
 
@@ -489,7 +485,11 @@ Notice the base case will ensure the code does not run forever. The line if (n <
 In this lesson, you learned about algorithmic thinking and building your own data types. Specifically, you learned…
 
 - Algorithms.
+
 - Big O notation.
+
 - Binary search and linear search.
+
 - Various sort algorithms, including bubble sort, selection sort, and merge sort.
+
 - Recursion.

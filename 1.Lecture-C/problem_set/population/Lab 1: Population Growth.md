@@ -7,20 +7,24 @@ Determine how long it takes for a population to reach a particular size.
     End size: 200
     Years: 9
 
-# Background
+## Background
+
 Say we have a population of n llamas. Each year, n / 3 new llamas are born, and n / 4 llamas pass away.
 
 For example, if we were to start with n = 1200 llamas, then in the first year, 1200 / 3 = 400 new llamas would be born and 1200 / 4 = 300 llamas would pass away. At the end of that year, we would have 1200 + 400 - 300 = 1300 llamas.
 
 To try another example, if we were to start with n = 1000 llamas, at the end of the year, we would have 1000 / 3 = 333.33 new llamas. We can’t have a decimal portion of a llama, though, so we’ll truncate the decimal to get 333 new llamas born. 1000 / 4 = 250 llamas will pass away, so we’ll end up with a total of 1000 + 333 - 250 = 1083 llamas at the end of the year.
 
-# Getting Started
+## Getting Started
+
 Once complete, start by clicking inside your terminal window, then execute cd by itself. You should find that its “prompt” resembles the below.
 
 $
+
 Click inside of that terminal window and then type
 
 mkdir population
+
 followed by Enter in order to make a directory called population in your codespace. Take care not to overlook the space between mkdir and population or any other character for that matter!
 
 Here on out, to execute (i.e., run) a command means to type it into a terminal window and then hit Enter. Commands are case-sensitive, so be sure not to type in uppercase when you mean lowercase or vice versa.
@@ -28,18 +32,23 @@ Here on out, to execute (i.e., run) a command means to type it into a terminal w
 Now execute
 
 cd population
+
 to move yourself into (i.e., open) that directory. Your prompt should now resemble the below.
 
 population/ $
+
 Click inside of that terminal window and then type
 
 wget https://cdn.cs50.net/2022/fall/labs/1/population.c
+
 followed by Enter in order to download a template file called population.c in your codespace. Take care not to overlook the space between wget and the following URL, or any other character for that matter! If all was successful, you should execute
 
 ls
+
 and see a file named population.c. Executing code population.c should open the file where you will type your code for this lab. If not, retrace your steps and see if you can determine where you went wrong!
 
-# Implementation Details
+## Implementation Details
+
 Complete the implementation of population.c, such that it calculates the number of years required for the population to grow from the start size to the end size.
 
 - Your program should first prompt the user for a starting population size.
@@ -49,10 +58,11 @@ Complete the implementation of population.c, such that it calculates the number 
 - Your program should then calculate the (integer) number of years required for the population to reach at least the size of the end value.
 - Finally, your program should print the number of years required for the llama population to reach that end size, as by printing to the terminal Years: n, where n is the number of years.
 
-# Walkthrough
+## Walkthrough
+
 [Walk-Through](https://youtu.be/dZmtRHHUB1M)
 
-# Hints
+## Hints
 
 If you want to repeatedly re-prompt the user for the value of a variable until some condition is met, you might want to use a do ... while loop. For example, recall the following code from lecture, which prompts the user repeatedly until they enter a positive integer.
 
@@ -72,9 +82,11 @@ How might you adapt this code to ensure a start size of at least 9, and an end s
 - To print an integer n to the terminal, recall that you can use a line of code like
 
         printf("The number is %i\n", n);
+
 to specify that the variable n should fill in for the placeholder %i.
 
-# How to Test Your Code
+## How to Test Your Code
+
 Your program should behave per these examples below.
 
     $ ./population
@@ -110,7 +122,8 @@ Execute the below to evaluate the style of your code using style50.
 
     style50 population.c
 
-# How to Submit
+## How to Submit
+
 In your terminal, execute the below to submit your work.
 
     submit50 cs50/labs/2023/x/population
