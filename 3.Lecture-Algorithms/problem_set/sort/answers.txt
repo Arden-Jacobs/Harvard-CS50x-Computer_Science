@@ -1,0 +1,11 @@
+sort1 uses: Bubble Sort
+
+How do you know?: My test on a large sorted data set , it wasn't the slowest test of the 2 algorithms. Comparing pairs would be fatser then iterating over each item of a sorted data set.
+
+sort2 uses: Merge Sort
+
+How do you know?: Out of the 3 algorithms I know for fact that merge sort would be the faster algorithm, when sorting a large random data set.
+
+sort3 uses: Selection Sort
+
+How do you know?: My test on a large sorted data set , it was the slowest test of the 2 algorithms. Iterating over each item of a sorted data set would be slower then Comparing pairs.
