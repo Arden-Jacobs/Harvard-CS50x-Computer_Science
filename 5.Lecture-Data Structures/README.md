@@ -336,8 +336,7 @@ We watched a video called [Jack Learns the Facts](https://www.youtube.com/watch?
   <mo stretchy="false">)</mo>
 </math>, as it only takes a very small number of steps to insert at the front of a list.
 
-- Considering the amount of time required to search this list, it is in the order of 
-<math xmlns="http://www.w3.org/1998/Math/MathML">
+- Considering the amount of time required to search this list, it is in the order of <math xmlns="http://www.w3.org/1998/Math/MathML">
   <mi>O</mi>
   <mo stretchy="false">(</mo>
   <mi>n</mi>
