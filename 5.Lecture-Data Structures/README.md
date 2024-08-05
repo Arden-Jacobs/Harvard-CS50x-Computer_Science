@@ -52,12 +52,12 @@
 
 - In code, you might imagine a stack as follows:
 
-    typedef struct
-    {
-        person people[CAPACITY];
-        int size;
-    }
-    stack;
+        typedef struct
+        {
+            person people[CAPACITY];
+            int size;
+        }
+        stack;
 
     Notice that an array called people is of type person. The CAPACITY is how high the stack could be. The integer size is how full the stack actually is, regardless of how much it could hold.
 
