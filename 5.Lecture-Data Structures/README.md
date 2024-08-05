@@ -636,8 +636,7 @@ We watched a video called [Jack Learns the Facts](https://www.youtube.com/watch?
 
 - A tree like the above offers dynamism that an array does not offer. It can grow and shrink as we wish.
 
-- Further, this structure offers a search time of
-<math xmlns="http://www.w3.org/1998/Math/MathML">
+- Further, this structure offers a search time of <math xmlns="http://www.w3.org/1998/Math/MathML">
   <mi>O</mi>
   <mo stretchy="false">(</mo>
   <mi>l</mi>
@@ -653,14 +652,12 @@ We watched a video called [Jack Learns the Facts](https://www.youtube.com/watch?
 
 - Dictionaries, like actual book-form dictionaries that have a word and a definition, have a key and a value.
 
-- The holy grail of algorithmic time complexity is
-<math xmlns="http://www.w3.org/1998/Math/MathML">
+- The holy grail of algorithmic time complexity is <math xmlns="http://www.w3.org/1998/Math/MathML">
   <mi>O</mi>
   <mo stretchy="false">(</mo>
   <mn>1</mn>
   <mo stretchy="false">)</mo>
-</math>
- or constant time. That is, the ultimate is for access to be instantaneous.
+</math> or constant time. That is, the ultimate is for access to be instantaneous.
 
     ![a graph of various time comlexities where O of log n is second best and O of 1 is best](https://cs50.harvard.edu/x/2024/notes/5/cs50Week5Slide151.png)
 
