@@ -718,8 +718,7 @@ We watched a video called [Jack Learns the Facts](https://www.youtube.com/watch?
   <mn>4</mn>
   <mo>=</mo>
   <mn>104</mn>
-</math>
-need nodes just to store Toad!
+</math> need nodes just to store Toad!
 
 - Toad would be stored as follows:
 
