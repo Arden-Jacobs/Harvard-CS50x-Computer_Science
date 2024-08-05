@@ -723,11 +723,11 @@ need nodes just to store Toad!
 
 - Toad would be stored as follows:
 
-    ![toad being spelled with one letter at a time where one letter is associated with one list T from one list O from another and so on ]()
+    ![toad being spelled with one letter at a time where one letter is associated with one list T from one list O from another and so on ](https://cs50.harvard.edu/x/2024/notes/5/cs50Week5Slide207.png)
 
 - Tom would then be stored as follows:
 
-    ![toad being spelled with one letter at a time where one letter is associated with one list T from one list O from another and so on and tom being spelled similarly where toad and tom share a two common letters T and O]()
+    ![toad being spelled with one letter at a time where one letter is associated with one list T from one list O from another and so on and tom being spelled similarly where toad and tom share a two common letters T and O](https://cs50.harvard.edu/x/2024/notes/5/cs50Week5Slide209.png)
 
 - The downside of this structure is how many resources are required to use it.
 
