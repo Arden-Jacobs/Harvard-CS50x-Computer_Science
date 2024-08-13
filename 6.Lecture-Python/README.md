@@ -124,7 +124,7 @@
 
 - However, speed is a tradeoff. Because C allows you, the programmer, to make decisions about memory management, it may run faster than Python – depending on your code. While C only runs your lines of code, Python runs all the code that comes under the hood with it when you call Python’s built-in functions.
 
-- You can learn more about functions in the Python documentation
+- You can learn more about functions in the [Python documentation](https://docs.python.org/3/library/functions.html)
 
 ## Filter
 
