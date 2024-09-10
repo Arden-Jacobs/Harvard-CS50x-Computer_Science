@@ -1,0 +1,38 @@
+Html Tags :
+
+nav
+
+div
+
+a
+
+ul
+
+li
+
+section
+
+h2
+
+span
+
+img
+
+i
+
+CSS Properties :
+
+font-family
+
+margin
+
+padding
+
+box-sizing
+
+text-decoration
+
+
+JavaScript : I used JS to creating a typing effect that make it seem as if this array ["Software Engineer", "Entrepreneur", "Computer Scientist"] is being typed on the screen.
+
+Bootstrap : I used some componets of bootstrap so that I don't have to recreate the wheel and it safe's me the trouble of making things mobile responsive.
