@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                 <h3>Why do Java developers wear glasses?</h3>
+                     <button id="A1">To look smart</button>
+                     <button id="A2">Because they can’t C#</button>
+                     <button id="A3">To protect their eyes</button>
+                     <p class='mark'></p>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                 <h3>What is the correct syntax to declare a pointer in C? (hint: name the variable ptr)</h3>
+                 <input autocomplete="off" placeholder="Answer" type="text" id="ans">
+                 <button class="ans">Confirm</button>
+                 <p class='con'></p>
+            </div>
+        </div>
+    </body>
+    <script>
+        // multiple choice
+        let A = document.querySelector('#A1')
+        A.addEventListener('click', function() {
+            A.style.backgroundColor = 'red';
+            A.parentElement.querySelector('.mark').innerHTML = 'Incorrect';
+        });
+
+        let B = document.querySelector('#A2')
+        B.addEventListener('click', function() {
+            B.style.backgroundColor = 'green';
+            A.parentElement.querySelector('.mark').innerHTML = 'Correct!';
+        });
+
+        let C = document.querySelector('#A3')
+        C.addEventListener('click', function() {
+            C.style.backgroundColor = 'red';
+            A.parentElement.querySelector('.mark').innerHTML = 'Incorrect';
+        });
+
+        // free response
+        let answer = document.querySelector('#ans')
+        let check = document.querySelector('.ans')
+
+        check.addEventListener('click', function() {
+            if (answer.value == 'int *ptr')
+            {
+                answer.style.backgroundColor = 'green';
+                answer.parentElement.querySelector('.con').innerHTML = 'Correct!';
+            }
+            else
+            {
+                answer.style.backgroundColor = 'red';
+                answer.parentElement.querySelector('.con').innerHTML = 'Incorrect';
+            }
+        })
+    </script>
+</html>
